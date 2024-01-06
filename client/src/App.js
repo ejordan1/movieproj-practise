@@ -2,14 +2,12 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Add from "./pages/Add";
 import Books from "./pages/Books";
 import Update from "./pages/Update";
+import "./style.css";
+
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
-        <Routes path="/books" element={<Books/>}>
-
-        </Routes>
-    </BrowserRouter> */
+      {
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<Books/>}/>
