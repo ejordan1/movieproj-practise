@@ -18,7 +18,7 @@ const Login = () => {
     const handleClick = async e => {
         e.preventDefault()
         try{
-            const res = await axios.post("http://localhost:8800/login", userInfo);
+            const res = await axios.post("http://localhost:8800/register", userInfo);
             console.log(res);
             navigate("/"); 
         }catch(err){
